@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Library system</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1>
+        <a class="nav-link" id="logo" href="index.html">Library System</a>
+      </h1>
+      <ul class="menu">
+        <li><a href="#book-head" class="nav-link">books</a></li>
+        <li><a href="#reg-form" class="nav-link">Register</a></li>
+        <li><a href="#" class="nav-link">Contact Us</a></li>
+        <li><a href="#" class="nav-link">Logout</a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <div class="card">
+        <h1 id="book-head" class="card-head">Books</h1>
+        <table id="table">
+          <thead>
+            <tr>
+              <th>Book ID</th>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Genre</th>
+              <th>Availability</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>
+                <a class="title-link" href="#">To Kill a Mockingbird</a>
+                <table>
+                  <tr>
+                    <td>Publication Date: July 11, 1960</td>
+                  </tr>
+
+                  <tr>
+                    <td>Page Count: 281 pages</td>
+                  </tr>
+
+                  <tr>
+                    <td>ISBN: 978-0061120084</td>
+                  </tr>
+                </table>
+              </td>
+              <td>Harper Lee</td>
+              <td>Novel,Social Issues</td>
+              <td>Available</td>
+            </tr>
+          </tbody>
+          <tr>
+            <td>2</td>
+            <td>
+              <a class="title-link" href="#">1984</a>
+              <table>
+                <tr>
+                  <td>Publication Date: June 8, 1949</td>
+                </tr>
+
+                <tr>
+                  <td>Page Count: 328 pages</td>
+                </tr>
+
+                <tr>
+                  <td>ISBN: 978-0451524935</td>
+                </tr>
+              </table>
+            </td>
+            <td>George Orwell</td>
+            <td>Political Fiction</td>
+            <td>Not Available</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>
+              <a class="title-link" href="#">The Great Gatsby</a>
+              <table>
+                <tr>
+                  <td>Publication Date: April 10, 1925</td>
+                </tr>
+
+                <tr>
+                  <td>Page Count: 180 pages</td>
+                </tr>
+
+                <tr>
+                  <td>ISBN: 978-0743273565</td>
+                </tr>
+              </table>
+            </td>
+            <td>F. Scott Fitzgerald</td>
+            <td>Novel, Tragedy</td>
+            <td>Available</td>
+          </tr>
+        </table>
+      </div>
+      <div class="card">
+        <h1 class="card-head">Register</h1>
+        <form id="reg-form" action="#" method="post">
+          <label for="first-name">First Name:</label><br />
+          <input
+            type="text"
+            id="first-name"
+            class="box"
+            placeholder="Enter your Name Here"
+            required
+          />
+          <label for="last-name">Last Name:</label><br />
+          <input
+            type="text"
+            id="last-name"
+            class="box"
+            placeholder="Enter your Last Here"
+            required
+          />
+          <label for="dob">Date Of Birth:</label><br />
+          <input type="date" id="dob" class="box" required />
+          <label for="age">Age:</label><br />
+          <input
+            type="number"
+            id="age"
+            class="box"
+            placeholder="Enter your Age Here"
+            min="5" max="100"
+            required
+          />
+          <label for="email">Email:</label><br />
+          <input
+            type="email"
+            id="email"
+            class="box"
+            placeholder="xyz@abc.com"
+            required
+          />
+          <label for="password">Password:</label><br />
+          <input
+            type="password"
+            id="password"
+            class="box"
+            placeholder="Enter your Password"
+            required
+          />
+          <label for="cnf-pass">Confirm Password:</label><br />
+          <input
+            type="password"
+            id="cnf-pass"
+            class="box"
+            placeholder="Re-enter your Password"
+            required
+          />
+          <button class="reg-button" type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
