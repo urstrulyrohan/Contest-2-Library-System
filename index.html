@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="" id="head" class="hover">Library System</a>
+        <div id=about>
+                <a class="deco hover" href="#table">Books</a>
+                <a class="deco hover" href="#Register">Register</a>
+                <a class="deco hover" href="">Contact us</a>
+                <a class="deco hover" href="">Logout</a>
+        <div >
+       
+    </nav>
+    <section id="main">
+        <div class="sec" id="table">
+            
+            <table>
+                <caption>Books</caption>
+                <thead>
+                    <tr>
+                        <th>Books Id</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Genre</th>
+                        <th>Availbility</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <a href="">Books Title 1</a>
+                            <table>
+                                <tr><td>Publication Date: 2000</td></tr>
+                                <tr><td>Page Count: 250</td></tr>
+                                <tr><td>ISBN: 123-4567890123</td></tr>
+                            </table>
+                        </td>
+                        <td>Author Name 1</td>
+                        <td>Genre 1</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            <a href="">Books Title 2</a>
+                            <table>
+                                <tr><td>Publication Date: 2005</td></tr>
+                                <tr><td>Page Count: 300</td></tr>
+                                <tr><td>ISBN: 123-4567890456</td></tr>
+                            </table>
+                        </td>
+                        <td>Author Name 2</td>
+                        <td>Genre 2</td>
+                        <td>Not Available</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <a href="">Books Title 3</a>
+                            <table>
+                                <tr><td>Publication Date: 2010</td></tr>
+                                <tr><td>Page Count: 350</td></tr>
+                                <tr><td>ISBN: 123-4567890789</td></tr>
+                            </table>
+                        </td>
+                        <td>Author Name 3</td>
+                        <td>Genre 3</td>
+                        <td>Available</td>
+                    </tr>
+                </tbody>
+            </table>
+           
+        </div>
+        <div class="sec" id="Register">
+             <form action="" id="mainform">
+                <h2 id="reg">Register</h2>
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" required><br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" required ><br>
+                <label for="Date">Date of Birth:</label><br>
+                <input type="date" id="Date" required><br>
+                <label for="age">Age</label><br>
+                <input type="number" id="age" required maxlength="100"><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" required><br>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" required><br>
+                <label for="cpassword">Confirm Password</label><br>
+                <input type="password" id="cpassword" required><br>
+                <button type="submit">Register</button>
+             </form>
+        </div>
+    </section>
+</body>
+</html>
